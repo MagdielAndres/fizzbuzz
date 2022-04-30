@@ -69,6 +69,14 @@ describe('Class ExplorerService: 3 Métodos estaticos y obtener informacion', ()
       const explorers = Reader.readJsonFile('./test/explorersTest.json');
       const explorerCansInNode =  ExplorerService.getAmountOfExplorersByMission(explorers, "node");
       
-      expect(explorerCansInNode).toBe(5)
+      expect(explorerCansInNode).toBe(5);
   });
+
+  test('Método: Obtener la lista de usuarios de githug de los explores que estoan en node', () => { 
+    const explorers = Reader.readJsonFile('./test/explorersTest.json');
+    const explorerGithubInNode = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
+
+    expect(explorerGithubInNode).toEqual(["ajolonauta1", "ajolonauta2", "ajolonauta3", "ajolonauta4", "ajolonauta5"]);
+  });
+
 });
