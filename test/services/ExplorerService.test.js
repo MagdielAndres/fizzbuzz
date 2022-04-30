@@ -65,4 +65,9 @@ describe('Class ExplorerService: 3 Métodos estaticos y obtener informacion', ()
           ]);
     });
 
+    test('Método stati getAmountOfExplorersByMission: Obtener la cantidad de explorers por misión node ', () => { 
+      const explorersInNode =  ExplorerService.getAmountOfExplorersByMission(explorers, "node");
+
+      expect(explorersInNode).toBe(5)
+  });
 });
