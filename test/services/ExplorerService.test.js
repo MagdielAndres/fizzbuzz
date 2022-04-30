@@ -2,10 +2,10 @@ const Reader = require('./../../lib/utils/Reader')
 const ExplorerService = require('./../../lib/services/ExplorerService')
 
 describe('Class ExplorerService: 3 Métodos estaticos y obtener informacion', () => { 
-    const explorers = Reader.readJsonFile('./test/explorersTest.json');
+    
 
     test('Método static filterByMission: filtarr por misión node', () => {         
-        
+        const explorers = Reader.readJsonFile('./test/explorersTest.json');
         const explorersInNode =  ExplorerService.filterByMssion(explorers, "node");
 
         expect(explorersInNode).toEqual([
@@ -65,9 +65,10 @@ describe('Class ExplorerService: 3 Métodos estaticos y obtener informacion', ()
           ]);
     });
 
-    test('Método stati getAmountOfExplorersByMission: Obtener la cantidad de explorers por misión node ', () => { 
-      const explorersInNode =  ExplorerService.getAmountOfExplorersByMission(explorers, "node");
-
-      expect(explorersInNode).toBe(5)
+    test('Método stati getAmountOfExplorersByMission: Obtener la cantidad de explorers por misión node ', () => {
+      const explorers = Reader.readJsonFile('./test/explorersTest.json');
+      const explorerCansInNode =  ExplorerService.getAmountOfExplorersByMission(explorers, "node");
+      
+      expect(explorerCansInNode).toBe(5)
   });
 });
