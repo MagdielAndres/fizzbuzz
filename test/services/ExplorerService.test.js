@@ -1,7 +1,7 @@
 const Reader = require('./../../lib/utils/Reader')
 const ExplorerService = require('./../../lib/services/ExplorerService')
 
-describe('Class ExplorerService: 3 Métodos estaticos y obtener informacion ', () => { 
+describe('Class ExplorerService: 3 Métodos estaticos y obtener informacion', () => { 
     const explorers = Reader.readJsonFile('./test/explorersTest.json');
 
     test('Método static filterByMission: filtarr por misión node', () => {         
