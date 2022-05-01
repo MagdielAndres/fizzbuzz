@@ -20,4 +20,11 @@ describe('Test FizzBuzz Service', () => {
 
         expect(explorerTrickBuzz).toEqual({name: "Explorer5", score: 5, trick: "BUZZ"});
     });
+
+    test('Cuando el score sea divisible sea entr 3 y 5, trick: FIZZBUZZ', () => { 
+        const explorer15 = {name: "Explorer15", score: 15};
+        const explorerTrickFizzbuzz = FizzbuzzService.ApplyValidationInExplorer(explorer15);
+
+        expect(explorerTrickFizzbuzz).toEqual({name: "Explorer15", score: 15, trick: "FIZZBUZZ"});
+    });
 });
