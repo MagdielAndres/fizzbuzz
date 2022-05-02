@@ -66,4 +66,10 @@ describe("Creando controller para conectar la funcionalidad con el server", () =
         expect(listExplorersUsername).toEqual(["ajolonauta1", "ajolonauta2", "ajolonauta3", "ajolonauta4", "ajolonauta5"]);
     });
 
+    test("Método que regresa la cantidad de explorers en la misión enviada", () => { 
+        const amountExplorersInMission =  ExplorerController.getExplorersAmounttByMission("node");
+
+        expect(amountExplorersInMission).toBe(5);
+    });
+
 });
