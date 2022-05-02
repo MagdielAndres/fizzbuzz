@@ -59,4 +59,11 @@ describe("Creando controller para conectar la funcionalidad con el server", () =
             }
         ]);
     });
+
+    test("Método que regresa la lista de usernames de los explorers filtrados por la misión", () => { 
+        const listExplorersUsername = ExplorerController.getExplorersUsernamesByMission("node");
+
+        expect(listExplorersUsername).toEqual(["ajolonauta1", "ajolonauta2", "ajolonauta3", "ajolonauta4", "ajolonauta5"]);
+    });
+
 });
