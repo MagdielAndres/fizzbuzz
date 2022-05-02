@@ -1,5 +1,4 @@
 const ExplorerController = require("./../../lib/controllers/ExplorerController");
-const FizzbuzzService = require("./../../lib/services/FizzbuzzService");
 
 describe("Creando controller para conectar la funcionalidad con el server", () => { 
     test("Método para obtener la lista de explorers filtrados por misión", () => { 
