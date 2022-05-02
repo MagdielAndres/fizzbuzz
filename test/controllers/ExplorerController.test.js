@@ -1,4 +1,5 @@
 const ExplorerController = require("./../../lib/controllers/ExplorerController");
+const FizzbuzzService = require("./../../lib/services/FizzbuzzService");
 
 describe("Creando controller para conectar la funcionalidad con el server", () => { 
     test("Método para obtener la lista de explorers filtrados por misión", () => { 
@@ -135,6 +136,12 @@ describe("Creando controller para conectar la funcionalidad con el server", () =
         const amountExplorersInMission =  ExplorerController.getExplorersAmounttByMission("node");
 
         expect(amountExplorersInMission).toBe(10);
+    });
+
+    test("Metodo que solo recibe un numero y devuelve un valor ya sea FIZZBUZZ, FIZZ, BUZZ, O NUMERO dependiendo la condicion", () => { 
+        const valor = ExplorerController.getValidationNumber(4);
+
+        expect(valor).toBe(4);
     });
 
 });
