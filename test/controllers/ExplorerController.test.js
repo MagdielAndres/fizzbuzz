@@ -56,6 +56,71 @@ describe("Creando controller para conectar la funcionalidad con el server", () =
                     "elixir",
                     "elm"
                 ]
+            },
+            {
+                "name": "Woopa11",
+                "githubUsername": "ajolonauta11",
+                "score": 11,
+                "mission": "node",
+                "stacks": [
+                    "javascript",
+                    "elixir",
+                    "groovy",
+                    "reasonML",
+                    "elm"
+                ]
+            },
+            {
+                "name": "Woopa12",
+                "githubUsername": "ajolonauta12",
+                "score": 12,
+                "mission": "node",
+                "stacks": [
+                    "javascript",
+                    "elixir",
+                    "groovy",
+                    "reasonML",
+                    "elm"
+                ]
+            },
+            {
+                "name": "Woopa13",
+                "githubUsername": "ajolonauta13",
+                "score": 13,
+                "mission": "node",
+                "stacks": [
+                    "javascript",
+                    "elixir",
+                    "groovy",
+                    "reasonML",
+                    "elm"
+                ]
+            },
+            {
+                "name": "Woopa14",
+                "githubUsername": "ajolonauta14",
+                "score": 14,
+                "mission": "node",
+                "stacks": [
+                    "javascript",
+                    "elixir",
+                    "groovy",
+                    "reasonML",
+                    "elm"
+                ]
+            },
+            {
+                "name": "Woopa15",
+                "githubUsername": "ajolonauta15",
+                "score": 15,
+                "mission": "node",
+                "stacks": [
+                    "javascript",
+                    "elixir",
+                    "groovy",
+                    "reasonML",
+                    "elm"
+                ]
             }
         ]);
     });
@@ -63,13 +128,13 @@ describe("Creando controller para conectar la funcionalidad con el server", () =
     test("Método que regresa la lista de usernames de los explorers filtrados por la misión", () => { 
         const listExplorersUsername = ExplorerController.getExplorersUsernamesByMission("node");
 
-        expect(listExplorersUsername).toEqual(["ajolonauta1", "ajolonauta2", "ajolonauta3", "ajolonauta4", "ajolonauta5"]);
+        expect(listExplorersUsername).toEqual(["ajolonauta1", "ajolonauta2", "ajolonauta3", "ajolonauta4", "ajolonauta5", "ajolonauta11", "ajolonauta12", "ajolonauta13", "ajolonauta14", "ajolonauta15"]);
     });
 
     test("Método que regresa la cantidad de explorers en la misión enviada", () => { 
         const amountExplorersInMission =  ExplorerController.getExplorersAmounttByMission("node");
 
-        expect(amountExplorersInMission).toBe(5);
+        expect(amountExplorersInMission).toBe(10);
     });
 
 });
