@@ -28,3 +28,33 @@ describe("Test FizzBuzz Service", () => {
         expect(explorerTrickFizzbuzz).toEqual({name: "Explorer15", score: 15, trick: "FIZZBUZZ"});
     });
 });
+
+describe("Test Método applyValidationInNumber", () => { 
+    test("Cuando el numero es divisible entre 3 y 5 devuelve FIZZbUZZ", () => { 
+        const num1 = 15;
+        const ValorFIZZBUZZ = FizzbuzzService.applyValidationInNumber(num1);
+
+        expect(ValorFIZZBUZZ).toBe("FIZZBUZZ");
+    });
+
+    test("Cuando el numero es divisible entre 3 devuelve FIZZ", () => { 
+        const num1 = 3;
+        const ValorFIZZ = FizzbuzzService.applyValidationInNumber(num1);
+
+        expect(ValorFIZZ).toBe("FIZZ");
+    });
+
+    test("Cuando el numero es divisible entre 5 devuelve BUZZ", () => { 
+        const num1 = 5;
+        const ValorBUZZ = FizzbuzzService.applyValidationInNumber(num1);
+
+        expect(ValorBUZZ).toBe("BUZZ");
+    });
+
+    test("Recibe el numero y devuelve le mismo numero", () => { 
+        const num1 = 2;
+        const Valormismo = FizzbuzzService.applyValidationInNumber(num1);
+
+        expect(Valormismo).toBe(2);
+    });
+});
