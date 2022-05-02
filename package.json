@@ -4,7 +4,9 @@
   "description": "Fizzbuzz",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/jest/bin/jest.js"
+    "test": "node ./node_modules/jest/bin/jest.js",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/MagdielAndres/fizzbuzz#readme",
   "devDependencies": {
+    "eslint": "^8.14.0",
     "jest": "^28.0.2"
   }
 }
