@@ -2,14 +2,14 @@
 El proyecto se trata de un Api de FizzBuzz, Donde se calcula cierta información de los explores de LaunchX.
 
 ## Puntos del proyecto:
-1. Obtener la lista de explores que solo están en node.
+1. Obtener la lista de explorers que solo están en node.
 2. Obtener la cantidad de explorers que están en node.
 3. Obtener la lista de usuarios de GitHub de los explores que están en node.
 4. Validación que se aplica tres reglas:
-   - Si el campo score del explorer es divisible entre 3, entonces se agrega un campo nuevo llamdo `trick` cuyo valor será `FIZZ`.
-   - Si el campo score del explorer es divisible entre 5, entonces se agrega un campo nuevo llamdo `trick` cuyo valor será `BUZZ`.
-   - Si el campo score del explorer es divisible entre 3 y 5, entonces se agrega un campo nuevo llamdo `trick` cuyo valor será `FIZZBUZZ`.
-   - Si el campo score no es divisible por ningun de las reglas anteriores, entonces se agrega un campo nuevo llamdo `trick` cuyo valor será el del score.
+   - Si el campo score del explorer es divisible entre 3, entonces se agrega un campo nuevo llamado `trick` cuyo valor será `FIZZ`.
+   - Si el campo score del explorer es divisible entre 5, entonces se agrega un campo nuevo llamado `trick` cuyo valor será `BUZZ`.
+   - Si el campo score del explorer es divisible entre 3 y 5, entonces se agrega un campo nuevo llamado `trick` cuyo valor será `FIZZBUZZ`.
+   - Si el campo score no es divisible por ningun de las reglas anteriores, entonces se agrega un campo nuevo llamado `trick` cuyo valor será el del score.
 
 5. Api server con endpoints que utiliza la funcionalides antes mencionadas:
    - Obtiene la lista de explorers en la misión que se envie (node o java).
